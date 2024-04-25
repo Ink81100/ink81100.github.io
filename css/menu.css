@@ -1,0 +1,61 @@
+main{
+    padding-top: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-image: url(../img/global/border.webp);
+    background-size: 100% 100%;
+    overflow: hidden;
+    
+}
+
+h1{
+    font-family:"Pizzola-Bold";
+    color: #f60000 !important;
+    text-align: center;
+}
+
+.smoke{
+    margin: auto;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0%;
+    min-width: 100%;
+    height: auto;
+}
+
+
+
+.foodZone{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    animation: fadeFood ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeFood {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media (max-width: 767px) {
+    .foodZone{
+        display: flex;
+        margin-top: 25px;
+    }
+    .smoke{
+        background-size: cover;
+        margin-top: auto;
+    }
+    .smoke :not(:first-child){
+        margin-top: 10px;
+    }
+
+}

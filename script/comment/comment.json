@@ -1,0 +1,40 @@
+[
+    {
+        "followerSprite": "Cat_form.png",
+        "name": "Joon",
+        "comment": "Je n'ais jamais été autant heureux de toutes ma vie. Je crois que je vais rester içi pour toujours."
+    },
+    {
+        "followerSprite": "Elephant_form.png",
+        "name": "Arteson",
+        "comment": "SmUgc3VpcyBjb2luY8OpIGRhbnMgY2V0IGVuZHJvaXQgZGVwdWlzIDYgYW5zLiBBaWRlei1tb2kh"
+    },
+    {
+        "followerSprite": "Frog_form.png",
+        "name": "Hoppy",
+        "comment": "Cette île propose des plats tellement merveilleux qu'ils pourraient vous faire tomber par terre."
+    },
+
+    {
+        "followerSprite": "Cat_form.png",
+        "name": "Joon",
+        "comment": "Je n'ais jamais été autant heureux de toutes ma vie. Je crois que je vais rester içi pour toujours."
+    },
+    {
+        "followerSprite": "Elephant_form.png",
+        "name": "Arteson",
+        "comment": "SmUgc3VpcyBjb2luY8OpIGRhbnMgY2V0IGVuZHJvaXQgZGVwdWlzIDYgYW5zLiBBaWRlei1tb2kh"
+    },
+    {
+        "followerSprite": "Frog_form.png",
+        "name": "Hoppy",
+        "comment": "Cette île propose des plats tellement merveilleux qu'ils pourraient vous faire tomber par terre."
+    },
+    {
+        "followerSprite": "Other_form.png",
+        "name": "Name",
+        "comment": "Your comment here."
+    }
+
+]
+    

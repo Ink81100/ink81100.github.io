@@ -1,0 +1,108 @@
+main{
+    background-image: url(../img/global/grass-tile.png);
+    background-repeat: repeat;
+    height: 100%;
+    flex: 1;
+    padding-top: 79px;
+}
+
+.smoke{
+    margin: auto;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0%;
+
+}
+
+.smoke-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.smoke-container{flex: 1;}
+
+.smoke-text{flex: 1;}
+
+
+/**List**/
+main ul{margin-left: 15%;}
+main li{
+    list-style: none;
+    text-align: justify;
+}
+
+#descriptionCarousel{
+    background-image: url(../img/global/border.webp);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2%;
+    margin-left: auto;
+    height: 50%;
+    width: 50%;
+}
+.carousel-inner{border-radius: 5px;}
+
+/**Decoration**/
+.decorations{
+    display: flex;
+    justify-items: center;
+    margin-bottom: 1%;
+}
+
+.decoration{
+    max-height: 250px;
+    width: auto;
+}
+
+.decoration-container{
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#followersLine{
+    padding: 1%;
+}
+#plush{margin-left: auto;
+    height: auto;}
+
+#barn{
+    margin-right: auto;
+    padding: 5%;
+    padding-bottom: 6%;
+    
+}
+
+@media (max-width: 767px) {
+    
+
+    .smoke{
+        background-size: cover;
+        margin-top: auto;
+    }
+    
+    .smoke-container{
+        flex-direction: column;
+    }
+
+    #descriptionCarousel{
+        margin-left: 0%;
+        margin-top: 1%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .decorations{
+        flex-direction: column;
+    }
+
+    .decoration-container{width: 100%;}
+
+    main ul{margin: 0%;}
+}
