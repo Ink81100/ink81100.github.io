@@ -169,8 +169,13 @@ footer cite{
     color: #f1edd9;
 }
 footer cite a{
-    color: #f1edd9;
+    color: #f60000;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer cite a:hover{
+    color: #f60000;
 }
 
 footer img{
