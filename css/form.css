@@ -7,6 +7,10 @@ main{
     padding-top: 79px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main video{
@@ -17,4 +21,14 @@ main video{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+#myform{
+    background-image: url(../img/global/playlist-bg.png);
+    background-size: 100% 100%;
+
+}
+
+li{
+    display: block;
 }
