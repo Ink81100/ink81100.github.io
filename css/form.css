@@ -27,7 +27,7 @@ main video{
     background-image: url(../img/global/playlist-bg.png);
     background-size: 100% 100%;
     padding: 10px;
-    max-width: 20%;
+    width: fit-content;
 }
 
 ul{
