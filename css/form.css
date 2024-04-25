@@ -4,7 +4,7 @@ main{
     height: 100vh; /* Adjust based on your needs */
     overflow: hidden;
     color: #f1edd9;
-    margin-top: 79px;
+    padding-top: 79px;
     display: flex;
     flex-direction: column;
 }
