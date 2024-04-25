@@ -107,6 +107,7 @@ nav{
     background-image: url(../img/global/grass-tile.png);
     background-repeat: repeat;
     padding: 1%; 
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
