@@ -72,7 +72,7 @@
                 <source src="/videos/bgForm.mp4" type="video/webm">
             </video>
 
-            <form action="/y.html" method="get">
+            <form id="myform" action="/y.html" method="get">
                 <ul>
                     <li>
                         <label for="firstname">Prénom</label>
@@ -88,7 +88,7 @@
                     </li>
                     <li>
                         <div class="buttonText">
-                            <a class="nav-link" type="submit">
+                            <a class="nav-link" onclick="document.getElementById('myform').submit()">
                                 <span>Inscription</span>
                                 <img class="buttonOut" src="../img/nav/button.png" alt="Bouton de reservation" id="buttonOut" loading="eager">
                                 <img class="buttonOver" src="../img/nav/button-over.png" alt="Bouton de reservaation" id="buttonOver" loading="eager">
