@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     //On récupere les donnnées du json 
-    fetch('http://127.0.0.1:5500/script/comment/comment.json')
+    fetch('http://ink81100.github.io/script/comment/comment.json')
         .then(response => {
             if (!response.ok) {
             throw new Error('Network response was not ok');

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const foods = null;
-    fetch('http://127.0.0.1:5500/script/food/foods.json')
+    fetch('http://ink81100.github.io/script/food/foods.json')
     .then(response => {
         if (!response.ok) {
         throw new Error('Network response was not ok');
