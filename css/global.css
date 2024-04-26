@@ -101,6 +101,7 @@ nav{
 
 .buttonText a img{
     height: 56px;
+    user-select: none;
 }
 
 /***Commentaires**/
