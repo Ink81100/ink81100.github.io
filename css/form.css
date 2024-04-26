@@ -39,6 +39,10 @@ li{
     flex-direction: column;
 }
 
+li:not(:first-child){
+    margin-top: 3px;
+}
+
 .buttonText a img{
     max-height: 56px;
     height: auto;
