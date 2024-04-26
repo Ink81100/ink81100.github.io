@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     // Get the form element
-    const form = document.getElementById('myForm');
+    const form = document.getElementById('myform');
 
     // Get the element that triggers form submission
     const submitElement = document.querySelector('.submit');
