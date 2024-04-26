@@ -90,6 +90,7 @@ nav{
     overflow: hidden;
     margin: 0%;
     width: auto; /* Ensures the div only takes up as much width as its content */
+    height: fit-content;
 }
 
 .buttonText a {
@@ -99,7 +100,7 @@ nav{
 }
 
 .buttonText a img{
-    height: 56;
+    height: 56px;
 }
 
 /***Commentaires**/
