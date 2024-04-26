@@ -38,3 +38,8 @@ li{
     display: flex;
     flex-direction: column;
 }
+
+.buttonText a img{
+    max-height: 56px;
+    height: auto;
+}
