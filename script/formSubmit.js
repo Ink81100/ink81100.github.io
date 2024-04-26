@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
         // Check if the form is valid
         if (form.checkValidity()) {
         // If the form is valid, submit it programmatically
+        const formdata = new FormData(form);
         form.submit();
         } else {
         // If the form is not valid, display the browser's default validation messages
