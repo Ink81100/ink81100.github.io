@@ -26,7 +26,7 @@ main video{
 #myform{
     background-image: url(../img/global/playlist-bg.png);
     background-size: 100% 100%;
-    padding: 15px;
+    padding: 30px;
     width: fit-content;
 }
 
