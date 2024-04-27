@@ -18,30 +18,41 @@ document.addEventListener("DOMContentLoaded", function(){
             
             // Define the new object to be added
             const newFollower = {
-                "followerSprite": `${form.followerForm.value}`,
-                "name": `${form.name.value +" " +form.firstChild.value}`,
+                "followerSprite": formdata.get('followerForm'),
+                "name": formdata.get('name') + " " + formdata.get('firstChild'),
                 "comment": "C'était le meilleur jour de ma vie"
             };
 
             // Convert the new object to JSON
             const newFollowerJson = JSON.stringify(newFollower);
 
-            // Send the new follower data to the server
-            fetch('/addFollower', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: newFollowerJson,
-            })
+            // Fetch the existing JSON data
+            fetch('https://ink81100.github.io/script/comment/comment.json')
             .then(response => response.json())
             .then(data => {
-                console.log('Success:', data);
-                // Optionally, you can redirect or show a success message here
+                // Add the new follower to the existing data
+                data.push(newFollower);
+
+                // Send the updated data to the server
+                fetch('/addFollower', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    // Optionally, you can redirect or show a success message here
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    // Optionally, you can show an error message here
+                });
             })
             .catch((error) => {
-                console.error('Error:', error);
-                // Optionally, you can show an error message here
+                console.error('Error fetching JSON:', error);
             });
 
             // Optionally, you can submit the form or redirect the user here
