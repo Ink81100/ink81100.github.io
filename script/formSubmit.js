@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 data.push(newFollower);
 
                 // Send the updated data to the server
-                fetch('/addFollower', {
+                fetch('https://ink81100.github.io/script/comment/comment.json', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
