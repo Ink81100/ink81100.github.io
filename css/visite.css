@@ -12,14 +12,20 @@ main{
     justify-content: flex-start;
 }
 
+.smoke-text{
+    flex: 1;
+    
+}
+
 .smoke img{
     background-image: url(../img/global/border.webp);
-    background-size: contain;
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 2%;
+    margin-left: auto;
     height: 50%;
     width: 50%;
-    margin-left: auto;
 }
 
 @media (max-width: 767px) {
