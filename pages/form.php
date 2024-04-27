@@ -88,8 +88,14 @@
                     </li>
                         <label for="followerForm">Apparence</label>
                         <select name="followerForm" id="">
-                            <option value=""></option>
-                            
+                            <?php
+                                $dossierImages = '../img/follower'; // Remplacez par le chemin de votre dossier d'images
+                                $fichiers = glob($dossierImages . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+                                foreach($fichiers as $fichier) {
+                                    $nomFichier = basename($fichier);
+                                    echo '<option value="' . $nomFichier . '" style="background-image:url('$dossierImages+"/"+$fichier');">' . $nomFichier . '</option>';
+                                }
+                            ?>
                         </select>
                     <li>
                         <div class="buttonText submit">
