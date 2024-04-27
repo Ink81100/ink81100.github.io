@@ -93,8 +93,11 @@
                                 $fichiers = glob($dossierImages . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
                                 foreach($fichiers as $fichier) {
                                     $nomFichier = basename($fichier);
-                                    echo '<option value="' . $nomFichier . '" style="background-image:url('$dossierImages+"/"+$fichier');">' . $nomFichier . '</option>';
-                                }
+                                    // Sanitize the file name to prevent XSS attacks
+                                    $nomFichier = htmlspecialchars($nomFichier, ENT_QUOTES, 'UTF-8');
+                                    // Correctly concatenate the path for the background image
+                                    $backgroundImagePath = htmlspecialchars($dossierImages . '/' . $nomFichier, ENT_QUOTES, 'UTF-8');
+                                    echo '<option value="' . $nomFichier . '" style="background-image:url(\'' . $backgroundImagePath . '\');">' . $nomFichier . '</option>';                                }
                             ?>
                         </select>
                     <li>
