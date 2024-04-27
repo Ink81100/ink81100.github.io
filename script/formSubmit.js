@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
         // Check if the form is valid
         if (form.checkValidity()) {
         // If the form is valid, submit it programmatically
-        form.submit();
+        window.location.href = "https://ink81100.github.io/pages/confirm.html";
         } else {
         // If the form is not valid, display the browser's default validation messages
         form.reportValidity();
