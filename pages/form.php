@@ -97,7 +97,8 @@
                                     $nomFichier = htmlspecialchars($nomFichier, ENT_QUOTES, 'UTF-8');
                                     // Correctly concatenate the path for the background image
                                     $backgroundImagePath = htmlspecialchars($dossierImages . '/' . $nomFichier, ENT_QUOTES, 'UTF-8');
-                                    echo '<option value="' . $nomFichier . '" style="background-image:url(\'' . $backgroundImagePath . '\');">' . $nomFichier . '</option>';                                }
+                                    echo '<option value="' . $nomFichier . '" style="background-image:url(\'' . $backgroundImagePath . '\');">' . $nomFichier . '</option>';
+                                }
                             ?>
                         </select>
                     <li>
