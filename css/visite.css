@@ -1,0 +1,35 @@
+main{
+    padding-top: 79px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.smoke{
+    flex-direction: row;
+    height: fit-content;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.smoke img{
+    background-image: url(../img/global/border.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    
+}
+
+@media (max-width: 767px) {
+    
+
+    .smoke{
+        background-size: cover;
+        margin-top: auto;
+    }
+    
+    .smoke-container{
+        flex-direction: column;
+    }
+
+}
