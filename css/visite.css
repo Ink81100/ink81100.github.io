@@ -17,7 +17,9 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px;
-    
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
 }
 
 @media (max-width: 767px) {
@@ -26,10 +28,16 @@ main{
     .smoke{
         background-size: cover;
         margin-top: auto;
+        flex-direction: column;
     }
     
     .smoke-container{
         flex-direction: column;
+    }
+
+    .smoke img{
+        margin-top: 1%;
+        margin-left: 0%;
     }
 
 }
