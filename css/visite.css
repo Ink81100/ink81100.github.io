@@ -12,6 +12,10 @@ main{
     justify-content: flex-start;
 }
 
+.smoke:nth-child(even){
+    flex-direction: row-reverse;
+}
+
 .smoke-text{
     flex: 1;
 }
@@ -30,12 +34,18 @@ main{
 ul{
     margin: 0%;
 }
+
+
 @media (max-width: 767px) {
     
 
     .smoke{
         background-size: cover;
         margin-top: auto;
+        flex-direction: column;
+    }
+
+    .smoke:nth-child(even){
         flex-direction: column;
     }
     
