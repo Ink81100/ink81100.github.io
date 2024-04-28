@@ -7,7 +7,6 @@ main{
 
 .smoke{
     display: flex;
-    flex-direction: row;
     height: fit-content;
     width: auto;
     justify-content: flex-start;
