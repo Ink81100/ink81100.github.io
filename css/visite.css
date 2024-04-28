@@ -12,7 +12,7 @@ main{
     justify-content: flex-start;
 }
 
-.smoke:nth-child(even){
+.smoke:nth-child(2n){
     flex-direction: row-reverse;
 }
 
@@ -45,7 +45,7 @@ ul{
         flex-direction: column;
     }
 
-    .smoke:nth-child(even){
+    .smoke:nth-child(2n){
         flex-direction: column;
     }
     
