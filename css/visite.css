@@ -12,7 +12,7 @@ main{
     justify-content: flex-start;
 }
 
-.smoke:nth-child(2n){
+.smoke:nth-child(2n+0){
     flex-direction: row-reverse;
 }
 
@@ -32,7 +32,11 @@ main{
 }
 
 ul{
-    margin: 0%;
+    padding: 0%;
+}
+
+li{
+    list-style: none;
 }
 
 
@@ -45,7 +49,7 @@ ul{
         flex-direction: column;
     }
 
-    .smoke:nth-child(2n){
+    .smoke:nth-child(2n+0){
         flex-direction: column;
     }
     
