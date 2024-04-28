@@ -20,6 +20,9 @@ main{
     flex: 1;
 }
 
+.smoke.smoke:nth-child(2n+0){
+    flex-direction: row-reverse;
+}
 .smoke img{
     background-image: url(../img/global/border.webp);
     background-size: 100% 100%;
