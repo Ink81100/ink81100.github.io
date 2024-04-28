@@ -205,6 +205,10 @@ footer img {
     transform: scaleY(-1);
 }
 
+.buttonOver{
+    display: none;
+}
+
 @media (max-width: 767px) {
     .navbar-collapse {
         display: flex;
