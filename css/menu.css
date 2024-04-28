@@ -24,6 +24,7 @@ h1{
     padding-bottom: 0%;
     min-width: 100%;
     height: auto;
+    flex-direction: column;
 }
 
 .foodZone{
