@@ -1,4 +1,4 @@
-/*Font*/
+/* Font Definitions */
 @font-face {
     font-family: 'Pizzola-Bold';
     src: url(../font/Piazzolla-Bold.ttf);
@@ -9,13 +9,15 @@
     src: url(../font/FiraSans-Regular.ttf);
 }
 
-::selection{
+/* Text Selection Customization */
+::selection {
     color: #070403;
     background-color: #f60000;
-    text-shadow: px #070403;
+    text-shadow: none;
 }
 
-body{
+/* Base Body Styles */
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,49 +26,49 @@ body{
     background-color: #070403 !important;
 }
 
-
-/***Barre de navigation***/
-nav{
+/* Navigation Styles */
+nav {
     width: auto;
     height: 79px;
 }
 
-.navbar-custom{
+.navbar-custom {
     background-color: rgba(07, 04, 03, 0.8);
 }
 
-.nav-item{
+.nav-item {
     max-height: 72.5px;
 }
 
 .nav-item a {
-    color: #f1edd9 !important; /* Ensure this color is applied */
+    color: #f1edd9 !important;
     transition: color 0.3s;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: #f60000 !important;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: rgba(07, 04, 03, 0.8) !important;
     border-radius: 0% !important;
     box-shadow: none !important;
     border: none !important;
 }
 
-.dropdown-item{background-color: transparent !important;}
-
-#crown, #logo, #buttonOverNav, #buttonOutNav{
-    width: auto; /* Adjust the width as needed */
-    height: 55px; /* This allows the height to adjust automatically */
-    object-fit: cover; /* This ensures the image covers the area without distorting its aspect ratio */
+.dropdown-item {
+    background-color: transparent !important;
 }
 
+/* Image Styles for Various UI Elements */
+#crown, #logo, #buttonOverNav, #buttonOutNav {
+    width: auto;
+    height: 55px;
+    object-fit: cover;
+}
 
-
-/***Contenu**/
-.smoke{
+/* Content Area Styling */
+.smoke {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -77,54 +79,55 @@ nav{
     padding: 5%;
     color: #f1edd9;
 }
-.smoke h3,.smoke h2,.smoke h1{
+
+.smoke h3, .smoke h2, .smoke h1 {
     font-family: 'Pizzola-Bold';
     color: #f60000;
     text-align: center;
-    
 }
 
+/* Styling for Button Text */
 .buttonText {
-    display: inline-block; /* Allows the div to shrink to fit its content */
+    display: inline-block;
     overflow: hidden;
     margin: 0%;
-    width: auto; /* Ensures the div only takes up as much width as its content */
+    width: auto;
     height: fit-content;
 }
 
 .buttonText a {
-    display: inline-block; /* Allows the a tag to shrink to fit its content */
-    width: auto; /* Ensures the a tag only takes up as much width as its content */
-    position: relative; /* Needed for absolute positioning of the span */
+    display: inline-block;
+    width: auto;
+    position: relative;
 }
 
-.buttonText a img{
+.buttonText a img {
     height: 56px;
     user-select: none;
 }
 
-/***Commentaires**/
-.commentZone{
+/* Comment Section Styling */
+.commentZone {
     background-image: url(../img/global/grass-tile.png);
     background-repeat: repeat;
-    padding: 1%; 
+    padding: 1%;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.commentZone .smoke{
+.commentZone .smoke {
     position: relative;
     left: 0%;
     max-width: fit-content;
     padding: 10px;
 }
 
-.comments{
+.comments {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-content: center;
 }
@@ -138,14 +141,16 @@ nav{
     color: #070403;
 }
 
-.comment p{overflow-wrap: anywhere;}/*coupe les mots*/
+.comment p {
+    overflow-wrap: anywhere;
+}
 
-.follower img{
+.follower img {
     width: 50px;
     height: auto;
 }
 
-.follower{
+.follower {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,52 +158,54 @@ nav{
     color: #f60000;
 }
 
-.buttonOver{
-    display: none;
-}
-
-/***Pied de page***/
-footer{
+/* Footer Styling */
+footer {
     display: flex;
     flex-direction: column;
     margin-top: auto;
     text-align: center;
     width: 100%;
 }
-footer cite{
+
+footer cite {
     background-color: #070403;
     color: #f1edd9;
 }
-footer cite a{
+
+footer cite a {
     color: #f1edd9;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-footer cite a:hover{
+footer cite a:hover {
     color: #f60000 !important;
 }
 
-footer img{
+footer img {
     height: 20px;
     width: 100%;
     position: absolute;
     translate: 0px -20px;
 }
 
-/**Transition**/
-.transition{
+/* Transitions and Media Queries */
+.transition {
     content: url(../img/global/smoky-gradient-divider-black.webp);
     height: 20px;
     width: 100%;
     position: absolute;
 }
 
-.top{translate: 0px -20px;}
-.bottom{transform: scaleY(-1);}
+.top {
+    translate: 0px -20px;
+}
+
+.bottom {
+    transform: scaleY(-1);
+}
 
 @media (max-width: 767px) {
-    /***Centre les élement du menu burger***/
     .navbar-collapse {
         display: flex;
         flex-direction: column;
@@ -207,33 +214,34 @@ footer img{
         opacity: 0;
     }
 
-    .navbar-collapse.show{
+    .navbar-collapse.show {
         opacity: 1;
         transition: all 1s;
-
     }
 
-    #buttonOverNav, #buttonOutNav{
+    #buttonOverNav, #buttonOutNav {
         max-height: fit-content;
     }
 
-    nav{
+    nav {
         height: auto;
     }
-    
-    .dropdown-menu{
+
+    .dropdown-menu {
         position: relative !important;
         background-color: transparent !important;
-
     }
-    .nav-item{max-height: max-content;}
 
-    .comments{
+    .nav-item {
+        max-height: max-content;
+    }
+
+    .comments {
         display: flex;
         flex-direction: column;
     }
-    
-    .comment{
+
+    .comment {
         width: 100%;
         height: auto;
         padding-left: 8%;
@@ -242,4 +250,3 @@ footer img{
         margin-bottom: 3%;
     }
 }
- 

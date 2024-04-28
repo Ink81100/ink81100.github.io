@@ -1,4 +1,4 @@
-main{
+main {
     background-image: url(../img/global/grass-tile.png);
     background-repeat: repeat;
     height: 100%;
@@ -6,38 +6,40 @@ main{
     padding-top: 79px;
 }
 
-.smoke{
+.smoke {
     margin: auto;
     height: fit-content;
     align-items: center;
     justify-content: center;
     padding-bottom: 0%;
-
 }
 
-.smoke-container{
+.smoke-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
+    flex: 1;
 }
 
-.smoke-container{flex: 1;}
-
-.smoke-text{flex: 1;}
-
+.smoke-text {
+    flex: 1;
+}
 
 /**List**/
-main ul{margin-left: 15%;}
-main li{
+main ul {
+    margin-left: 15%;
+}
+
+main li {
     list-style: none;
     text-align: justify;
 }
 
-#descriptionCarousel{
+#descriptionCarousel {
     background-image: url(../img/global/border.webp);
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 2%;
@@ -47,61 +49,65 @@ main li{
 }
 
 /**Decoration**/
-.decorations{
+.decorations {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     margin-bottom: 1%;
 }
 
-.decoration{
+.decoration {
     max-height: 250px;
     width: auto;
 }
 
-.decoration-container{
+.decoration-container {
     display: flex;
     flex: 1;
     overflow: hidden;
     flex-wrap: wrap;
 }
 
-#followersLine{
+#followersLine {
     padding: 1%;
 }
-#plush{margin-left: auto;
-    height: auto;}
 
-#barn{
+#plush {
+    margin-left: auto;
+    height: auto;
+}
+
+#barn {
     margin-right: auto;
     padding: 5%;
     padding-bottom: 6%;
-    
 }
 
 @media (max-width: 767px) {
-    
-
-    .smoke{
+    .smoke {
         background-size: cover;
         margin-top: auto;
     }
-    
-    .smoke-container{
+
+    .smoke-container {
         flex-direction: column;
     }
 
-    #descriptionCarousel{
+    #descriptionCarousel {
         margin-left: 0%;
         margin-top: 1%;
         height: 100%;
         width: 100%;
     }
 
-    .decorations{
+    .decorations {
         flex-direction: column;
     }
 
-    .decoration-container{width: 100%;}
+    .decoration-container {
+        width: 100%;
+    }
 
-    main ul{margin: 0%;}
+    main ul {
+        margin: 0%;
+    }
 }

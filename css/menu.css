@@ -57,5 +57,4 @@ h1{
     .smoke :not(:first-child){
         margin-top: 10px;
     }
-
 }
