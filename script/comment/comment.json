@@ -16,25 +16,20 @@
     },
 
     {
-        "followerSprite": "Cat_form.png",
-        "name": "Joon",
-        "comment": "Je n'ais jamais été autant heureux de toutes ma vie. Je crois que je vais rester içi pour toujours."
+        "followerSprite": "Dog_form.png",
+        "name": "Luna",
+        "comment": "La lune brille si fort ici, c'est comme si chaque nuit était une célébration."
     },
     {
-        "followerSprite": "Elephant_form.png",
-        "name": "Arteson",
-        "comment": "SmUgc3VpcyBjb2luY8OpIGRhbnMgY2V0IGVuZHJvaXQgZGVwdWlzIDYgYW5zLiBBaWRlei1tb2kh"
+        "followerSprite": "Crow_form.png",
+        "name": "Hector",
+        "comment": "Le silence de la forêt la nuit est la meilleure musique pour mes oreilles."
     },
     {
-        "followerSprite": "Frog_form.png",
-        "name": "Hoppy",
-        "comment": "Cette île propose des plats tellement merveilleux qu'ils pourraient vous faire tomber par terre."
-    },
-    {
-        "followerSprite": "Other_form.png",
-        "name": "Name",
-        "comment": "Your comment here."
+        "followerSprite": "Deer_form.png",
+        "name": "Rouge",
+        "comment": "Les baies de cette île sont si juteuses, elles éclatent de saveur à chaque bouchée."
     }
-
+    
 ]
     
